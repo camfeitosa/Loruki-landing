@@ -24,9 +24,7 @@ $sql = "INSERT INTO contato (nome, email, senha) VALUES ('$name', '$email', '$se
 if ($conn->query($sql) === TRUE) {
     echo "Mensagem enviada com sucesso!";
 } else {
-    echo "Erro: " . $sql . "<br>" . $conn->error;
+    echo "Não conectou";
 }
 
-// Fecha a conexão com o banco de dados
-$conn->close();
 ?>
